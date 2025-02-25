@@ -12,5 +12,9 @@ Route::get('/', function () {
 
 
 // admin route
-Route::get('/admin', [AdminController::class, 'index']);
-Route::get('/dashboard', [AdminController::class, 'dashboard']);
+Route::group(['prefix' => 'admin', 'controller' => AdminController::class], function () {
+    Route::get('/dashboard', 'index')->name('admin.dashboard')->middleware('admin_auth');
+    Route::get('/', 'login')->name('admin.login');
+    Route::post('/authenticate', 'authenticate')->name('admin.authenticate');
+    Route::post('/logout', 'logout')->name('admin.logout');
+});
