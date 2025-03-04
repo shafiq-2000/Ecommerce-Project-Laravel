@@ -56,6 +56,19 @@
 <script src="{{ asset('backend') }}/js/custom.js"></script>
 <!-- end: JavaScript-->
 
+<link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script>
+    // toastr
+    @if (Session::has('message')) // message variable je kono name hote pare
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true,
+            "positionClass": "toast-top-center",
+        }
+        toastr.success("{{ session('message') }}");
+    @endif
+</script>
 </body>
 
 </html>
