@@ -5,4 +5,6 @@
 --এখনো একটা একটা পার্ট দরে দরে কাজ শেষ করা
 --প্রোডাক্ট  ক্যাটাগরি CRUD
 
-nb:subcategory status/delete baki ase
+sob file create kora hoise -akn code kotte hbe sudu
+
+

@@ -54,6 +54,30 @@
                                                 class="hidden-tablet">Manage Brand</span></a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span
+                                        class="hidden-tablet">Unit</span><span class="label label-important">3
+                                    </span></a>
+                                <ul>
+                                    <li><a class="submenu" href="{{route('unit.create')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Add Unit</span></a></li>
+
+                                    <li><a class="submenu" href="{{route('unit.index')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Manage Unit</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span
+                                        class="hidden-tablet">Size</span><span class="label label-important">3
+                                    </span></a>
+                                <ul>
+                                    <li><a class="submenu" href="{{route('size.create')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Add Size</span></a></li>
+
+                                    <li><a class="submenu" href="{{route('size.index')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Manage Size</span></a></li>
+                                </ul>
+                            </li>
 
 
                         </ul>
