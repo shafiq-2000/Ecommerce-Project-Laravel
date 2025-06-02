@@ -33,6 +33,7 @@ class AdminController extends Controller
                 'admin_name' => $result->admin_name,
                 'admin_phone' => $result->admin_phone,
                 'admin_email' => $result->admin_email,
+                'role' => 'admin',
             ]);
 
             return redirect()->route('admin.dashboard');

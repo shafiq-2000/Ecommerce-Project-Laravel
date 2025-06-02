@@ -78,6 +78,31 @@
                                                 class="hidden-tablet">Manage Size</span></a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span
+                                        class="hidden-tablet">Color</span><span class="label label-important">3
+                                    </span></a>
+                                <ul>
+                                    <li><a class="submenu" href="{{route('color.create')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Add Color</span></a></li>
+
+                                    <li><a class="submenu" href="{{route('color.index')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Manage Color</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span
+                                        class="hidden-tablet">Product</span><span class="label label-important">3
+                                    </span></a>
+                                <ul>
+                                    <li><a class="submenu" href="{{route('products.create')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Add Product</span></a></li>
+
+                                    <li><a class="submenu" href="{{route('products.index')}}"><i class="icon-file-alt"></i><span
+                                                class="hidden-tablet">Manage Product</span></a></li>
+                                </ul>
+                            </li>
 
 
                         </ul>

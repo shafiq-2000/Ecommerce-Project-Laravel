@@ -13,6 +13,14 @@
                 <!-- start: Header Menu -->
                 <div class="nav-no-collapse header-nav">
                     <ul class="nav pull-right">
+                        <li class="hidden-phone">
+                            <a href="{{ route('home') }}" target="_blank" title="Home">
+                                <i class="fa-regular fa-globe"></i>
+                            </a>
+                        </li>
+
+
+
                         <li class="dropdown hidden-phone">
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                 <i class="halflings-icon white warning-sign"></i>

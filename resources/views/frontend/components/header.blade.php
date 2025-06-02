@@ -9,7 +9,14 @@
             </ul>
             <ul class="header-links pull-right">
                 <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-                <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                <li>
+                    @if(session('role') == 'admin')
+                        <a href="{{route('admin.dashboard')}}"><i class="fa fa-user-o"></i> Admin</a>
+                    @else
+                        <a href="{{route('login')}}"><i class="fa fa-user-o"></i> My Account</a>
+                    @endif
+                </li>
+
             </ul>
         </div>
     </div>
@@ -24,7 +31,7 @@
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="#" class="logo">
+                        <a href="{{route('home')}}" class="logo">
                             <img src="{{ asset('frontend') }}/img/logo.png" alt="">
                         </a>
                     </div>
@@ -37,11 +44,11 @@
                         <form>
                             <select class="input-select">
                                 <option value="0">All Categories</option>
-                                <option value="1">Category 01</option>
-                                <option value="1">Category 02</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
                             </select>
-                            <input class="input" placeholder="Search here">
-                            <button class="search-btn">Search</button>
+                            <input class="input" placeholder="Search here"><button class="search-btn">Search</button>
                         </form>
                     </div>
                 </div>
